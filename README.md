@@ -28,43 +28,55 @@ The objective is to configure name resolution for a simulated internal network a
 - Azure Virtual Machine
 - Remote Desktop Connection
 
-<h2>Installation Steps</h2>
-
-1. Install DNS Role
-
+<h2>Install DNS Role</h2>
 On Windows Server:
 
 Add Roles and Features
-Install DNS Server
-Open DNS Manager
-mydomain.local
-Screenshot:
-DNS role installed
-DNS Manager open
+- Install DNS Server
+- Open DNS Manager
+- mydomain.local
+<p>
+<img width="1901" height="1009" alt="DNSinstalled" src="https://github.com/user-attachments/assets/6cc314f5-5ad7-475c-a901-8b22d35a9964" />
+</p>
 
-2. Create Forward Lookup Zone
-Right-click Forward Lookup Zones
-New Zone
-Primary Zone
-Name it: mydomain.local
-Screenshot:
-Zone creation wizard
-Zone visible in DNS Manager
+<p><img width="1846" height="1030" alt="DNS Manager" src="https://github.com/user-attachments/assets/eac6c529-4235-447e-848a-605e784f75f3" />
+</p>
 
-3. Create an A Record
-Create a host record:
-Name: fileserver
-Screenshot:
-A record created
+<h2>Create Forward Lookup Zone</h2>
+
+- Right-click Forward Lookup Zones
+- New Zone
+- Primary Zone
+- Name it: mydomain.local
+<p>
+<img width="611" height="518" alt="zonewizard" src="https://github.com/user-attachments/assets/bc3ea1b3-7ab6-4912-b7ee-78559521392c" />
+</p>
+
+<p>
+<img width="1180" height="311" alt="zonevisible" src="https://github.com/user-attachments/assets/2f383cbc-5310-457b-a013-7e7bfe49436b" />
+</p>
+
+<h2>Create an A Record</h2>
+
+- Create a host record:
+- Name: fileserver
+- IP:8.8.4.4
+<p>
+<img width="516" height="581" alt="fileservercreated" src="https://github.com/user-attachments/assets/68dc55ca-2a2b-46dd-92d4-853456ac63bf" />
+</p>
+
+A record created.
 
 This allows devices to resolve “fileserver.mydomain.local” to its IP address.
 
-4. Test Name Resolution
-Open Command Prompt:
-nslookup fileserver.mydomain.local
-ping fileserver.mydomain.local
-Screenshot:
-Successful resolution
+<h2>Test Name Resolution</h2>
+
+- Open Command Prompt:
+- nslookup fileserver.mydomain.local
+- ping fileserver.mydomain.local
+<p>
+<img width="1123" height="654" alt="powershellcmds" src="https://github.com/user-attachments/assets/01ee4422-a16f-4002-81e6-058daf1089fa" />
+</p>
 
 5. Break DNS (This Makes It Better)
 
