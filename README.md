@@ -61,11 +61,12 @@ Add Roles and Features
 - Create a host record:
 - Name: fileserver
 - IP:8.8.4.4
+
 <p>
 <img width="516" height="581" alt="fileservercreated" src="https://github.com/user-attachments/assets/68dc55ca-2a2b-46dd-92d4-853456ac63bf" />
 </p>
 
-A record created.
+DNS "A" record created.
 
 This allows devices to resolve “fileserver.mydomain.local” to its IP address.
 
@@ -74,40 +75,29 @@ This allows devices to resolve “fileserver.mydomain.local” to its IP address
 - Open Command Prompt:
 - nslookup fileserver.mydomain.local
 - ping fileserver.mydomain.local
+
 <p>
 <img width="1123" height="654" alt="powershellcmds" src="https://github.com/user-attachments/assets/01ee4422-a16f-4002-81e6-058daf1089fa" />
 </p>
 
-5. Break DNS (This Makes It Better)
+<h2>Break DNS</h2>
 
-Delete the A record.
-Run nslookup again.
-It should fail.
-Screenshot:
-Failed lookup
+- Right click fileserver Properties
+- Change IP to 192.168.x.x
+- Ping 192.168.x.x
+- It should fail
+  
+<p>
+<img width="1835" height="1024" alt="fileserverfail" src="https://github.com/user-attachments/assets/0aa594e8-f34c-4cf2-b6f3-fa9503ba5aa6" />
+</p>
+
+- Right click fileserver Properties
+- Delete the A record.
+- Run nslookup again
+- It should fail
+  
+<p>
+<img width="1842" height="1025" alt="fileserverfail2" src="https://github.com/user-attachments/assets/140fc6f9-841e-41c9-b8f0-4d59f2835570" />
+</p>
 
 Then recreate it and show it works again.
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
