@@ -25,8 +25,9 @@ The objective is to configure name resolution for a simulated internal network a
 
 <h2>List of Prerequisites</h2>
 
-- Azure Virtual Machine
+- Azure Virtual Machine, Virtual Box or VMWare
 - Remote Desktop Connection
+- Admin login
 
 <h2>Install DNS Role</h2>
 On Windows Server:
@@ -35,6 +36,7 @@ Add Roles and Features
 - Install DNS Server
 - Open DNS Manager
 - mydomain.local
+
 <p>
 <img width="1901" height="1009" alt="DNSinstalled" src="https://github.com/user-attachments/assets/6cc314f5-5ad7-475c-a901-8b22d35a9964" />
 </p>
