@@ -76,7 +76,7 @@ This allows devices to resolve “fileserver.mydomain.local” to its IP address
 
 <h2>Test Name Resolution</h2>
 
-- Open Command Prompt:
+- Open Command Prompt or Powershell:
 - nslookup fileserver.mydomain.local
 - ping fileserver.mydomain.local
 
@@ -93,6 +93,12 @@ This allows devices to resolve “fileserver.mydomain.local” to its IP address
   
 <p>
 <img width="1835" height="1024" alt="fileserverfail" src="https://github.com/user-attachments/assets/0aa594e8-f34c-4cf2-b6f3-fa9503ba5aa6" />
+</p>
+
+Important: If the ping is successful because it retrieves the same IP address of 8.8.4.4 the DNS cache needs to be flushed so it can be updated with the new IP of 192.168.x.x
+
+<p>
+<img width="1135" height="660" alt="flushdns" src="https://github.com/user-attachments/assets/3b6d4f7d-e89c-4990-a7bf-463d39fff4e7" />
 </p>
 
 - Right click fileserver 🡢 Properties
