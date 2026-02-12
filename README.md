@@ -95,10 +95,12 @@ This allows devices to resolve “fileserver.mydomain.local” to its IP address
 <img width="1835" height="1024" alt="fileserverfail" src="https://github.com/user-attachments/assets/0aa594e8-f34c-4cf2-b6f3-fa9503ba5aa6" />
 </p>
 
-Important: If the ping is successful because it retrieves the same IP address of 8.8.4.4 the DNS cache needs to be flushed so it can be updated with the new IP of 192.168.x.x
+Important: 
+If ping iretrieves the same IP address of 8.8.4.4 it will be successfull even though the IP address changed in the record. 
+This mean the DNS cache needs to be flushed so it can be updated with the new IP of 192.168.x.x
 
 <p>
-<img width="1135" height="660" alt="flushdns" src="https://github.com/user-attachments/assets/3b6d4f7d-e89c-4990-a7bf-463d39fff4e7" />
+<img width="1853" height="1027" alt="flushdns" src="https://github.com/user-attachments/assets/38685e9b-e7d2-4607-b603-d976bb583580" />
 </p>
 
 - Right click fileserver 🡢 Properties
@@ -110,4 +112,8 @@ Important: If the ping is successful because it retrieves the same IP address of
 <img width="1842" height="1025" alt="fileserverfail2" src="https://github.com/user-attachments/assets/140fc6f9-841e-41c9-b8f0-4d59f2835570" />
 </p>
 
-Then recreate it and show it works again.
+Then recreate it and it will work again.
+
+Note:
+Pinging is successful because 8.8.4.4 is one of the the IP addresses for Google public DNS which is online. 
+A Random Host (like 10.156.70.202) will always fail unless there is a host with that IP on the same subnet.
