@@ -62,6 +62,7 @@ Add Roles and Features
 <h2>Create an A Record</h2>
 
 - Create a host record:
+  - Right-click mydomain.local 🡢 New Host (A or AAAA)
 - Name: fileserver
 - IP:8.8.4.4
 
