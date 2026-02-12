@@ -82,7 +82,7 @@ This allows devices to resolve “fileserver.mydomain.local” to its IP address
 
 <h2>Break DNS</h2>
 
-- Right click fileserver Properties
+- Right click fileserver 🡢 Properties
 - Change IP to 192.168.x.x
 - Ping 192.168.x.x
 - It should fail
@@ -91,7 +91,7 @@ This allows devices to resolve “fileserver.mydomain.local” to its IP address
 <img width="1835" height="1024" alt="fileserverfail" src="https://github.com/user-attachments/assets/0aa594e8-f34c-4cf2-b6f3-fa9503ba5aa6" />
 </p>
 
-- Right click fileserver Properties
+- Right click fileserver 🡢 Properties
 - Delete the A record.
 - Run nslookup again
 - It should fail
