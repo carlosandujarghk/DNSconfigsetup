@@ -35,6 +35,7 @@ On Windows Server:
 Add Roles and Features
 - Install DNS Server
 - Open DNS Manager
+  - Server Manager 🡢 Tools 🡢 DNS
 - mydomain.local
 
 <p>
